@@ -179,6 +179,14 @@ analytics:
     anonymize_ip: false # Anonymize IP tracking for Analytics
 
 
+## => Collections
+collections:
+  people:
+    output: true
+    order:
+      - chen-jinsong.md
+
+
 ## => Build
 ##############################
 markdown    : kramdown
@@ -209,12 +217,24 @@ defaults:
       type: posts
     values:
       layout: article
-      sharing: true
-      license: true
+      sharing: false
+      license: false
       aside:
         toc: true
-      show_edit_on_github: true
-      show_subscribe: true
+      show_edit_on_github: false
+      show_subscribe: false
+      pageview: true
+  - scope:
+      path: ""
+      type: people
+    values:
+      layout: article
+      sharing: false
+      license: false
+      aside:
+        toc: true
+      show_edit_on_github: false
+      show_subscribe: false
       pageview: true
 
 
@@ -225,10 +245,3 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
-
-## => Collections
-collections:
-  people:
-    output: true
-    order:
-      - chen-jinsong.md

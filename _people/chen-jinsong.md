@@ -5,19 +5,14 @@ cover: /assets/jinsong.jpg
 ---
 
 Associate Professor
-
 <!--more-->
-
 Academic Unit of Human Communication, Learning, and Development
-
 BSc (SCUT), MA (GWU), EdD (GWU), Postdoc (Rutgers)
 
 ## Contact
 
 jinsong@hku.hk
-
 (852) 3917 0389
-
 Room 645, Meng Wah Complex
 
 ## Areas of Expertise
@@ -49,54 +44,54 @@ Source: Philosophy and Social Sciences Later-Stage Program, Guangdong Province
 Amount: RMB40,000
 Period: December 2019 – December 2021
  
-- Title: Exploring the Penalization of Latent Variable Modeling with Bayesian LASSO
-Source: Key Project, National Higher Education Quality Monitoring Data Center (Guangzhou)
-Amount: RMB100,000
+- Title: Exploring the Penalization of Latent Variable Modeling with Bayesian LASSO\
+Source: Key Project, National Higher Education Quality Monitoring Data Center (Guangzhou)\
+Amount: RMB100,000\
 Period: January 2019 – December 2020
  
-- Title: Combing Educational Taxonomy with Validity Theory for Higher Education Evaluation
-Source: Project for Teaching Innovation of Higher Education, Guangdong Province
-Amount: RMB20,000
+- Title: Combing Educational Taxonomy with Validity Theory for Higher Education Evaluation\
+Source: Project for Teaching Innovation of Higher Education, Guangdong Province\
+Amount: RMB20,000\
 Period: January 2019 – December 2020
  
-- Title: Framework Research on the Quality Standards for College Student Cultivation
-Source: Key Project, National Higher Education Quality Monitoring Data Center (Guangzhou)
-Amount: RMB200,000
+- Title: Framework Research on the Quality Standards for College Student Cultivation\
+Source: Key Project, National Higher Education Quality Monitoring Data Center (Guangzhou)\
+Amount: RMB200,000\
 Period: December 2015–December 2019
  
-- Title: Research on the Quality of Teaching and Course Evaluation
-Source: Long-term Project, National Higher Education Quality Monitoring Data Center (Guangzhou)
-Amount: RMB250,000
+- Title: Research on the Quality of Teaching and Course Evaluation\
+Source: Long-term Project, National Higher Education Quality Monitoring Data Center (Guangzhou)\
+Amount: RMB250,000\
 Period: December 2015 – December 2019
  
-- Title: Experimental Project on Assessment of Child and Youth Behaviors
-Source: Scientific Research Project Sponsored by Haoyuan Education Enterprise
-Amount: RMB50,000
+- Title: Experimental Project on Assessment of Child and Youth Behaviors\
+Source: Scientific Research Project Sponsored by Haoyuan Education Enterprise\
+Amount: RMB50,000\
 Period: October 2015 – December 2016
  
-- Title: Assessment of Children’s Developmental Ecology
-Source: Scientific Research Project Sponsored by Kdnet Enterprise
-Amount: RMB90,000
+- Title: Assessment of Children’s Developmental Ecology\
+Source: Scientific Research Project Sponsored by Kdnet Enterprise\
+Amount: RMB90,000\
 Period: June 2015 – December 2016
  
-- Title: Investigating a Framework for Course Evaluation Based on Student Evaluation of Teaching
-Source: Key Project, Undergraduate Teaching Reform Program, Sun Yat-Sen University
-Amount: RMB20,000
+- Title: Investigating a Framework for Course Evaluation Based on Student Evaluation of Teaching\
+Source: Key Project, Undergraduate Teaching Reform Program, Sun Yat-Sen University\
+Amount: RMB20,000\
 Period: January 2015 – January 2017
  
-- Title: Development of Computerized Adaptive Testing for Cognitive Diagnosis and Tracking and Its Applications for Basic Education
-Source: Humanities and Social Sciences Common Program, Ministry of Education
-Amount: RMB100,000
+- Title: Development of Computerized Adaptive Testing for Cognitive Diagnosis and Tracking and Its Applications for Basic Education\
+Source: Humanities and Social Sciences Common Program, Ministry of Education\
+Amount: RMB100,000\
 Period: October 2014 – October 2017
  
-- Title: Research on Integration of Cognitive Diagnosis Assessment and Evaluation
-Source: Social Sciences Common Program, Guangdong Province
-Amount: RMB20,000
+- Title: Research on Integration of Cognitive Diagnosis Assessment and Evaluation\
+Source: Social Sciences Common Program, Guangdong Province\
+Amount: RMB20,000\
 Period: January 2014 – January 2016
  
-- Title: Applications of Cognitive Diagnosis Assessments for Basic Mathematics
-Source: Start-up Grant, Sun Yat-Sen University
-Amount: RMB150,000
+- Title: Applications of Cognitive Diagnosis Assessments for Basic Mathematics\
+Source: Start-up Grant, Sun Yat-Sen University\
+Amount: RMB150,000\
 Period: February 2013 – February 2015
 
 ## Publications
@@ -168,3 +163,34 @@ Period: February 2013 – February 2015
 - \*Chen, J., & Choi, J., (2009). A comparison of maximum likelihood and expected a posteriori estimation for polychoric correlation using Monte Carlo simulation. Journal of Modern Applied Statistical Methods, 8(1), 337-354.
 
 - Zhou, X.-Y., Lei, Q., Marley, S. C., & Chen, J. (2009). The existential function of babies: Babies as a buffer of death-related anxiety. Asian Journal of Social Psychology, 12(1), 40–46. https://doi.org/10.1111/j.1467-839X.2008.01268.x
+
+## Professional Community Services
+
+### Computer programs distributed
+- EAPPCC: A Matlab program for estimating polychoric correlation matrices
+- GCDM: An Ox program for the general cognitive diagnosis modeling framework with dichotomous and polytomous attributes and dichotomous responses
+- GRDM: An Ox program for the graded response diagnosis modeling framework
+- GNDM: An Ox program for the general nominal diagnosis modeling framework
+- LAWBL: Latent (variable) analysis with Bayesian learning (R package version 1.3.0). Retrieved from https://CRAN.R-project.org/package=LAWBL
+
+### Keynotes or invited talks
+- 时间: 2015.12; 内容: 全球華人教育資訊與評估學術研討會暨中國測驗學會年會；主办单位：台中教育大学；地点：台湾；身份：报告嘉宾
+- Time: 2015.12; Content: Public Lecture & Academic Workshop on Cognitive Diagnosis Modeling; Hosted by: The Hong Kong Institute of Education; Venue: Hong Kong; Role: Speaker
+- Time: 2017.03; Content: Triangle Framework for Educational and Psychological Testing and Measurement; Hosted by: The University of Hong Kong; Venue: Hong Kong; Role: Speaker
+- 时间: 2018.01; 内容: 第二届全国心理学专业《心理统计学》《心理测量学》任课教师培训班；主办单位：中国心理学会；地点：广州；身份：课程报告人
+- Time: 2018.05; Content: Improving diagnostic assessments with Bayesian regularized item response models; Hosted by: Shanghai International Studies University; Venue: Shanghai; Role: Speaker
+- 时间: 2018.06; 内容:智慧评价与学习学术研讨会；主办单位：江西师范大学；地点：南昌；身份：报告嘉宾
+- Time: 2018.12; Content: Partially Confirmatory Approach to Scale Development with Bayesian Lasso; Hosted by: the Education University of Hong Kong; Venue: Hong Kong; Role: Speaker
+- 时间: 2019.1 内容: 第五届中国教育财政学术研讨会暨2019年中国教育发展战略学会教育财政专业委员会年会; 主办单位：北京大学；地点：北京；身份：特邀嘉宾
+ 
+### Service to the faculty/university/community
+- Quantitative Research Methods consultant, 2021-present
+- Service to the Confirmation or Thesis Examining Committees, 2020-present
+- Service to the Information Management programs, 2020-present
+
+### Knowledge Exchange Activities
+- 2021-12-01 to 2022-03-01: Open Courseware: Structural Equation Modeling I - A First Course, KE Website and Mobile Device
+- 2021-08-27 to 2021-08-27: A Partially Confirmatory Approach to Latent Variable Modeling with Bayesian Learning, Public Event (Delivering a Talk, Workshop, Exhibition, Performance, etc.)
+- 2021-06-16 to 2021-06-16: A Partially Confirmatory Approach to Factor Analysis with Bayesian Learning, Public Event (Delivering a Talk, Workshop, Exhibition, Performance, etc.)
+- 2021-06-01 to 2021-09-01: Open Courseware: Statistical and Psychometric Analyses Using R, KE Website and Mobile Device
+- 2020-09-01 to 2021-12-01: Open Courseware: Factor Analysis, KE Website and Mobile Device

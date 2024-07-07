@@ -185,7 +185,8 @@ collections:
     output: true
     order:
       - chen-jinsong.md
-
+  projects:
+    output: true
 
 ## => Build
 ##############################
@@ -227,6 +228,18 @@ defaults:
   - scope:
       path: ""
       type: people
+    values:
+      layout: article
+      sharing: false
+      license: false
+      aside:
+        toc: true
+      show_edit_on_github: false
+      show_subscribe: false
+      pageview: true
+  - scope:
+      path: ""
+      type: projects
     values:
       layout: article
       sharing: false

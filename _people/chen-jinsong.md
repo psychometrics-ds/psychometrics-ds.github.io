@@ -20,7 +20,7 @@ BSc (SCUT), MA (GWU), EdD (GWU), Postdoc (Rutgers)
 
 ## Contact
 
-jinsong@hku.hk
+jinsong[AT]hku.hk
 
 (852) 3917 0389
 

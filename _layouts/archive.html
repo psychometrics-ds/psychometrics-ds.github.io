@@ -1,13 +1,12 @@
 ---
 layout: page
-title: Archive
+titles: Archive
 ---
 
 <div class="layout--archive js-all">
   {%- include tags.html -%}
   <div class="js-result layout--archive__result d-none">
-    {%- assign all_articles = site.posts | concat: site.people -%}
-    {%- include article-list.html articles=all_articles type='brief' show_info=true reverse=true group_by='year' -%}
+    {%- include article-list.html articles=site.posts type='brief' show_info=true reverse=true group_by='year' -%}
   </div>
 </div>
 

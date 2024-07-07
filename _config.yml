@@ -234,8 +234,6 @@ defaults:
       license: false
       aside:
         toc: true
-      sidebar:
-        nav: people
       show_edit_on_github: false
       show_subscribe: false
       pageview: true
@@ -250,8 +248,6 @@ defaults:
       license: false
       aside:
         toc: true
-      sidebar:
-        nav: projects
       show_edit_on_github: false
       show_subscribe: false
       pageview: true

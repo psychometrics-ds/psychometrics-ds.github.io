@@ -22,3 +22,7 @@ Our mission is to push the boundaries of psychometrics and data science through 
 - Measurement Techniques
 - Data Science Applications in Education
 - Integration of Psychometrics with Natural Language Processing (NLP)
+
+## Visitor Map
+
+<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=EUClYyiIpYH2Wz9w4-UcoM5u3dpocI_W1Hep9MT-skQ&cl=ffffff&w=a"></script>

@@ -1,15 +1,17 @@
 ---
 title: Professor Chen, Jinsong
 tags: People
-cover: /assets/chen-jinsong.jpg
+cover: /assets/people/chen-jinsong.jpg
 show_date: false
 ---
 
-<img src="/assets/chen-jinsong.jpg" alt="profile photo of Chen Jinsong" width="30%"/>
+<img src="/assets/people/chen-jinsong.jpg" alt="profile photo of Chen Jinsong" width="30%"/>
 
-Associate Professor
+Lab Director
 
 <!--more-->
+
+Associate Professor
 
 Academic Unit of Human Communication, Learning, and Development
 

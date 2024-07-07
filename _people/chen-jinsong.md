@@ -1,8 +1,11 @@
 ---
 title: Professor Chen, Jinsong
 tags: People
-cover: /assets/jinsong.jpg
+cover: /assets/chen-jinsong.jpg
+show_date: false
 ---
+
+![TeXt Theme](/assets/chen-jinsong.jpg)
 
 Associate Professor
 

@@ -4,11 +4,7 @@ tags: People
 cover: /assets/jinsong.jpg
 ---
 
-Associate Professor <br /> 
-
-Academic Unit of Human Communication, Learning, and Development <br /> 
-
-BSc (SCUT), MA (GWU), EdD (GWU), Postdoc (Rutgers)
+Associate Professor <br /> Academic Unit of Human Communication, Learning, and Development <br /> BSc (SCUT), MA (GWU), EdD (GWU), Postdoc (Rutgers)
 
 <!--more-->
 

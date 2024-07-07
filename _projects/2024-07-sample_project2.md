@@ -6,8 +6,6 @@ show_tags: false
 modify_date: 2024-07
 ---
 
-<img src="/assets/people/chen-jinsong.jpg" alt="profile photo of Chen Jinsong" width="30%"/>
-
-## Sample Project
+<img src="/assets/projects/ph.svg" alt="profile photo of Chen Jinsong" width="30%"/>
 
 Content

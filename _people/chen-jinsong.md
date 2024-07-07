@@ -1,8 +1,14 @@
 ---
-title: Professor CHEN, Jinsong
+title: Professor Chen, Jinsong
 tags: People
 cover: /assets/jinsong.jpg
 ---
+
+Lab Director
+
+Associate Professor
+
+<!--more-->
 
 ## Information
 

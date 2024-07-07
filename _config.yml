@@ -234,9 +234,13 @@ defaults:
       license: false
       aside:
         toc: true
+      sidebar:
+        nav: people
       show_edit_on_github: false
       show_subscribe: false
       pageview: true
+      show_date: false
+      show_tags: false
   - scope:
       path: ""
       type: projects
@@ -246,6 +250,8 @@ defaults:
       license: false
       aside:
         toc: true
+      sidebar:
+        nav: projects
       show_edit_on_github: false
       show_subscribe: false
       pageview: true

@@ -2,8 +2,6 @@
 title: Professor Chen, Jinsong
 tags: People
 cover: /assets/people/chen-jinsong.jpg
-show_date: false
-show_tags: false
 ---
 
 <img src="/assets/people/chen-jinsong.jpg" alt="profile photo of Chen Jinsong" width="30%"/>

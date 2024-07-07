@@ -5,14 +5,19 @@ cover: /assets/jinsong.jpg
 ---
 
 Associate Professor
+
 <!--more-->
+
 Academic Unit of Human Communication, Learning, and Development
+
 BSc (SCUT), MA (GWU), EdD (GWU), Postdoc (Rutgers)
 
 ## Contact
 
 jinsong@hku.hk
+
 (852) 3917 0389
+
 Room 645, Meng Wah Complex
 
 ## Areas of Expertise

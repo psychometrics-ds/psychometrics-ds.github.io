@@ -226,8 +226,9 @@ plugins:
   - jekyll-sitemap
   - jemoji
 
-
-collections_dir: main
+## => Collections
 collections:
   people:
     output: true
+    order:
+      - chen-jinsong.md

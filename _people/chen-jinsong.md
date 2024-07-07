@@ -5,7 +5,7 @@ cover: /assets/chen-jinsong.jpg
 show_date: false
 ---
 
-![TeXt Theme](/assets/chen-jinsong.jpg)
+<img src="/assets/chen-jinsong.jpg" alt="profile photo of Chen Jinsong" width="30%"/>
 
 Associate Professor
 

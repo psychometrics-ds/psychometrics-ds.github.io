@@ -4,13 +4,13 @@ tags: People
 cover: /assets/jinsong.jpg
 ---
 
-Associate Professor
+Associate Professor <br /> 
 
-<!--more-->
-
-Academic Unit of Human Communication, Learning, and Development
+Academic Unit of Human Communication, Learning, and Development <br /> 
 
 BSc (SCUT), MA (GWU), EdD (GWU), Postdoc (Rutgers)
+
+<!--more-->
 
 ## Contact
 
@@ -34,11 +34,11 @@ Quantitative methods, psychometrics, and statistics
 
 ## Projects
 
-- Title: Advancing educational and psychological measurement with Bayesian learning: Methodological developments and practical implementations
+- Title: Advancing educational and psychological measurement with Bayesian learning: Methodological developments and practical implementations <br />
 
-Source: RGC General Research Fund (GRF)
+Source: RGC General Research Fund (GRF) <br />
 
-Amount: HK$333,000
+Amount: HK$333,000 <br />
 
 Period: July 2022 – July 2024
 

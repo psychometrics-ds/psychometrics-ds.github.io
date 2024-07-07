@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Psychometrics & Data Science
+title: Psychometrics & Data Science Lab
 mode: immersive
 header:
   theme: dark
@@ -16,7 +16,7 @@ Our mission is to push the boundaries of psychometrics and data science through 
 
 <img src="/assets/main_campus.jpg" alt="photo of HKU main campus" width="100%"/>
 
-# Our Focus
+## Our Focus
 
 - Educational Assessment
 - Measurement Techniques

@@ -1,7 +1,7 @@
 ---
-title: Sample Project 2
+title: Sample Project 1
 tags: Projects
-cover: /assets/people/chen-jinsong.jpg
+cover: /assets/projects/ph.svg
 show_date: true
 show_tags: false
 ---

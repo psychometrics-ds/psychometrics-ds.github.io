@@ -1,10 +1,7 @@
 ---
 title: Professor CHEN, Jinsong
 tags: People
-article_header:
-  type: cover
-  image:
-    src: /assets/jinsong.jpg
+cover: /assets/jinsong.jpg
 ---
 
 ## Information

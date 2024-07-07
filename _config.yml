@@ -225,3 +225,9 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+
+
+collections_dir: docs
+collections:
+  people:
+    output: true

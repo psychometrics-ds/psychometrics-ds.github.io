@@ -1,5 +1,5 @@
 ---
-title: Professor Jinsong Chen
+title: Professor Chen, Jinsong
 tags: People
 cover: /assets/people/jinsong-chen.jpg
 ---

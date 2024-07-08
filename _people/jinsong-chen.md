@@ -28,6 +28,8 @@ BSc (SCUT), MA (GWU), EdD (GWU), Postdoc (Rutgers)
   .icon {
     height: 1em;
     margin-right: 10px;
+    vertical-align: middle;
+    fill: #b8b8b8;
   }
 </style>
 

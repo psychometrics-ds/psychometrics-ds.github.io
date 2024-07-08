@@ -33,7 +33,7 @@ Our mission is to push the boundaries of psychometrics and data science through 
 >
 > *- Galileo Galilei*
 
-<img src="/assets/main_campus.jpg" alt="photo of HKU main campus" width="100%"/>
+![Image](/assets/main_campus.jpg){:width="100%"}
 
 ## Our Focus
 

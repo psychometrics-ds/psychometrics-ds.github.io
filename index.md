@@ -15,7 +15,15 @@ excerpt: "directed by Professor Chen Jinsong"
 
 ## Welcome
 
-Welcome to the Psychometrics and Data Science Laboratory, directed by Professor Chen Jinsong. Our lab is affiliated with the Academic Unit of Human Communication, Learning, and Development, within the Faculty of Education at the University of Hong Kong (HKU).
+Welcome to the Psychometrics and Data Science Laboratory, directed by Professor Chen Jinsong[^1]. Our lab is affiliated with the Academic Unit of Human Communication, Learning, and Development[^2], within the Faculty of Education[^3] at the University of Hong Kong (HKU)[^4].
+
+[^1]: [Link](https://psychometrics-ds.github.io/people/chen-jinsong.html) to the profile of Professor Chen Jinsong
+
+[^2]: [Link](https://web.edu.hku.hk/unit/human-communication-learning-and-development) to the Academic Unit of Human Communication, Learning, and Development
+
+[^3]: [Link](https://web.edu.hku.hk/) to the Faculty of Education
+
+[^4]: [Link](https://www.hku.hk/) to the University of Hong Kong
 
 Our mission is to push the boundaries of psychometrics and data science through innovative research and solutions. Our diverse team is committed to improving educational assessment, developing better measurement techniques, and using data science to enhance educational experiences.
 

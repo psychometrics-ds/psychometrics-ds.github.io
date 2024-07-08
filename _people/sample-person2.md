@@ -8,4 +8,4 @@ Sample
 
 <!--more-->
 
-<img src="/assets/people/ph-female.webp" alt="profile photo of Chen Jinsong" width="30%"/>
+![Image](/assets/people/ph-female.webp){:width="30%"}

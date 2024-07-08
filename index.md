@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Psychometrics & Data Science Lab
+title: Psychometrics \n & \n Data Science \n Laboratory
 mode: immersive
 header:
   theme: dark

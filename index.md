@@ -18,7 +18,9 @@ Welcome to the Psychometrics and Data Science Laboratory, directed by Professor 
 Our mission is to push the boundaries of psychometrics and data science through innovative research and solutions. Our diverse team is committed to improving educational assessment, developing better measurement techniques, and using data science to enhance educational experiences.
 
 > "Measure what can be measured,
+>
 > and make measurable what cannot be measured."
+>
 > *- Galileo Galilei*
 
 <img src="/assets/main_campus.jpg" alt="photo of HKU main campus" width="100%"/>

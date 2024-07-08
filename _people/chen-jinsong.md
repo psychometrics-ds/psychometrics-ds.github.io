@@ -4,10 +4,6 @@ tags: People
 cover: /assets/people/chen-jinsong.jpg
 ---
 
-<span style="display:none;" class="show-in-full">
-<img src="/assets/people/chen-jinsong.jpg" alt="profile photo of Chen Jinsong" width="30%"/>
-</span>
-
 Lab Director
 
 Associate Professor
@@ -17,6 +13,8 @@ Academic Unit of Human Communication, Learning, and Development
 BSc (SCUT), MA (GWU), EdD (GWU), Postdoc (Rutgers)
 
 <!--more-->
+
+<img src="/assets/people/chen-jinsong.jpg" alt="profile photo of Chen Jinsong" width="30%"/>
 
 ## Contact
 

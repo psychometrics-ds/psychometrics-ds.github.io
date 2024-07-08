@@ -2,6 +2,8 @@
 layout: article
 title: Courses
 key: page-courses
+aside:
+	toc: true
 ---
 
 ## 2023

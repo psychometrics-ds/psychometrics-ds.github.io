@@ -10,20 +10,15 @@ article_header:
   background_color: '#123'
   background_image:
     src: /assets/bg.webp
-overlay_excerpt: abc
 ---
 
 Welcome to the Psychometrics and Data Science Lab, directed by Professor Chen Jinsong. Our lab is affiliated with the Academic Unit of Human Communication, Learning, and Development, within the Faculty of Education at the University of Hong Kong (HKU).
 
 <!--more-->
 
-<style>
-  .page__header .header__brand path {
-    fill: rgba(255, 255, 255, .95);
-  }
-</style>
-
 Our mission is to push the boundaries of psychometrics and data science through innovative research and solutions. Our diverse team is committed to improving educational assessment, developing better measurement techniques, and using data science to enhance educational experiences.
+
+<!--more-->
 
 <img src="/assets/main_campus.jpg" alt="photo of HKU main campus" width="100%"/>
 

@@ -29,3 +29,7 @@ Our mission is to push the boundaries of psychometrics and data science through 
 ## Visitor Map
 
 <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=EUClYyiIpYH2Wz9w4-UcoM5u3dpocI_W1Hep9MT-skQ&cl=ffffff&w=a"></script>
+
+<script>
+  document.title = "Psychometrics and Data Science Laboratory";
+</script>

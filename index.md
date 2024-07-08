@@ -27,13 +27,13 @@ Welcome to the Psychometrics and Data Science Laboratory, directed by **Professo
 
 Our mission is to push the boundaries of psychometrics and data science through innovative research and solutions. Our diverse team is committed to improving educational assessment, developing better measurement techniques, and using data science to enhance educational experiences.
 
+---------------------------------------
+
 > "Measure what can be measured,
 >
 > and make measurable what cannot be measured."
 >
 > *- Galileo Galilei*
-
----------------------------------------
 
 ![Image](/assets/main_campus.jpg){:width="100%"}
 

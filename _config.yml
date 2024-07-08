@@ -180,7 +180,7 @@ collections:
   people:
     output: true
     order:
-      - chen-jinsong.md
+      - jinsong-chen.md
   projects:
     output: true
 

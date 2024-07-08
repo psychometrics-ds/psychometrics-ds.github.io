@@ -1,7 +1,7 @@
 ---
-title: Professor Chen, Jinsong
+title: Professor Jinsong Chen
 tags: People
-cover: /assets/people/chen-jinsong.jpg
+cover: /assets/people/jinsong-chen.jpg
 ---
 
 Lab Director

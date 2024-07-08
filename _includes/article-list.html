@@ -7,9 +7,9 @@
 
 {%- assign _sorted_list = include.articles -%}
 {%- if include.group_by == 'year' -%}
-  {%- assign _sorted_list = _sorted_list | sort: 'date' -%}
+  {%- assign _sorted_list = _sorted_list | sort: 'date' | reverse -%}
 {%- endif -%}
-{%- if include.reverse -%}
+{%- if include.reverse and include.group_by != 'year' -%}
   {%- assign _sorted_list = _sorted_list | reverse -%}
 {%- endif -%}
 

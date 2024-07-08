@@ -33,6 +33,8 @@ Our mission is to push the boundaries of psychometrics and data science through 
 >
 > *- Galileo Galilei*
 
+---------------------------------------
+
 ![Image](/assets/main_campus.jpg){:width="100%"}
 
 ## Our Focus

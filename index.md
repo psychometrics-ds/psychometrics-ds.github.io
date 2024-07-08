@@ -16,6 +16,12 @@ Welcome to the Psychometrics and Data Science Lab, directed by Professor Chen Ji
 
 <!--more-->
 
+<style>
+  .page__header .header__brand path {
+    fill: rgba(255, 255, 255, .95);
+  }
+</style>
+
 Our mission is to push the boundaries of psychometrics and data science through innovative research and solutions. Our diverse team is committed to improving educational assessment, developing better measurement techniques, and using data science to enhance educational experiences.
 
 <img src="/assets/main_campus.jpg" alt="photo of HKU main campus" width="100%"/>

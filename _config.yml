@@ -22,10 +22,7 @@ url     : https://psychometrics-ds.github.io # the base hostname & protocol for 
 baseurl : # does not include hostname
 title   : PDS Lab
 description: > # this means to ignore newlines until "Language & timezone"
-  Psychometrics and Data Science Lab
-  Academic Unit of Human Communication, Learning, and Development
-  Faculty of Education
-  The University of Hong Kong
+  Welcome to the Psychometrics and Data Science Lab, directed by Professor Chen Jinsong. Our lab is affiliated with the Academic Unit of Human Communication, Learning, and Development, within the Faculty of Education at the University of Hong Kong (HKU).
 
 ## => Language and Timezone
 ##############################

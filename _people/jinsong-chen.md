@@ -23,14 +23,10 @@ BSc (SCUT), MA (GWU), EdD (GWU), Postdoc (Rutgers)
   <span>jinsong[AT]hku.hk</span>
 </div>
 
-</br>
-
 <div class="contact-info" style="display: flex; align-items: center;">
   <img class="icon" src="/assets/icons/phone.svg"> 
   <span>(852) 3917 0389</span>
 </div>
-
-</br>
 
 <div class="contact-info" style="display: flex; align-items: center;">
   <img class="icon" src="/assets/icons/school.svg"> 

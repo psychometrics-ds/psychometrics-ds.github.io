@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Psychometrics<br>&<br>Data Science Laboratory"
+title: "Psychometrics<br>and<br>Data Science<br>Laboratory"
 mode: immersive
 header:
   theme: dark

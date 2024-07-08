@@ -19,7 +19,7 @@ Our mission is to push the boundaries of psychometrics and data science through 
 
 > "Measure what can be measured,
 > and make measurable what cannot be measured."
-> \- Galileo Galilei
+> *- Galileo Galilei*
 
 <img src="/assets/main_campus.jpg" alt="photo of HKU main campus" width="100%"/>
 

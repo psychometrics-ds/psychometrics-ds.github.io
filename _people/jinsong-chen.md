@@ -14,7 +14,7 @@ BSc (SCUT), MA (GWU), EdD (GWU), Postdoc (Rutgers)
 
 <!--more-->
 
-![Image](/assets/people/chen-jinsong.jpg){:width="30%"}
+![Image](/assets/people/jinsong-chen.jpg){:width="30%"}
 
 ## Contact
 

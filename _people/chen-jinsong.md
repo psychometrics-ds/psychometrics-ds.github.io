@@ -4,9 +4,9 @@ tags: People
 cover: /assets/people/chen-jinsong.jpg
 ---
 
+<span style="display:none;" class="show-in-full">
 <img src="/assets/people/chen-jinsong.jpg" alt="profile photo of Chen Jinsong" width="30%"/>
-
-<!--more-->
+</span>
 
 Lab Director
 

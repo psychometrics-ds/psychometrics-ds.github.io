@@ -8,13 +8,13 @@ cover: /assets/people/chen-jinsong.jpg
 
 Lab Director
 
-<!--more-->
-
 Associate Professor
 
 Academic Unit of Human Communication, Learning, and Development
 
 BSc (SCUT), MA (GWU), EdD (GWU), Postdoc (Rutgers)
+
+<!--more-->
 
 ## Contact
 

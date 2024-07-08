@@ -6,6 +6,8 @@ cover: /assets/people/chen-jinsong.jpg
 
 <img src="/assets/people/chen-jinsong.jpg" alt="profile photo of Chen Jinsong" width="30%"/>
 
+<!--more-->
+
 Lab Director
 
 Associate Professor

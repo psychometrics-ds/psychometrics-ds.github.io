@@ -1,5 +1,5 @@
 ---
-title: Advancing educational and psychological measurement with Bayesian learning: Methodological developments and practical implementations
+title: "Advancing educational and psychological measurement with Bayesian learning: Methodological developments and practical implementations"
 tags: Projects
 show_tags: false
 ---

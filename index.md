@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Psychometrics<br><div style='text-align: center;'>&</div><br>Data Science<br>Laboratory"
+title: "Psychometrics<br>&<br>Data Science<br>Laboratory"
 mode: immersive
 header:
   theme: dark

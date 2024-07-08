@@ -4,13 +4,39 @@ tags: People
 cover: /assets/people/jinsong-chen.jpg
 ---
 
-Lab Director
+<style>
+  .icon {
+    height: 1em;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
 
-Associate Professor
+  .contact-info{
+  	display: flex;
+  	align-items: center;
+  	margin-bottom: 1em;
+  }
+</style>
 
-Academic Unit of Human Communication, Learning, and Development
+<div class="contact-info">
+  <img class="icon" src="/assets/icons/role.svg"> 
+  <span>Lab Director</span>
+</div>
 
-BSc (SCUT), MA (GWU), EdD (GWU), Postdoc (Rutgers)
+<div class="contact-info">
+  <img class="icon" src="/assets/icons/role.svg"> 
+  <span>Associate Professor</span>
+</div>
+
+<div class="contact-info">
+  <img class="icon" src="/assets/icons/department.svg"> 
+  <span>Academic Unit of Human Communication, Learning, and Development</span>
+</div>
+
+<div class="contact-info">
+  <img class="icon" src="/assets/icons/school.svg"> 
+  <span>BSc (SCUT), MA (GWU), EdD (GWU), Postdoc (Rutgers)</span>
+</div>
 
 <!--more-->
 
@@ -18,28 +44,20 @@ BSc (SCUT), MA (GWU), EdD (GWU), Postdoc (Rutgers)
 
 ## Contact
 
-<div class="contact-info" style="display: flex; align-items: center; margin-bottom: 1em;">
+<div class="contact-info">
   <img class="icon" src="/assets/icons/email.svg"> 
   <span>jinsong[AT]hku.hk</span>
 </div>
 
-<div class="contact-info" style="display: flex; align-items: center; margin-bottom: 1em;">
+<div class="contact-info">
   <img class="icon" src="/assets/icons/phone.svg"> 
   <span>(852) 3917 0389</span>
 </div>
 
-<div class="contact-info" style="display: flex; align-items: center; margin-bottom: 1em;">
-  <img class="icon" src="/assets/icons/school.svg"> 
+<div class="contact-info">
+  <img class="icon" src="/assets/icons/location.svg"> 
   <span>Room 645, Meng Wah Complex</span>
 </div>
-
-<style>
-  .icon {
-    height: 1em;
-    margin-right: 10px;
-    vertical-align: middle;
-  }
-</style>
 
 ## Areas of Expertise
 

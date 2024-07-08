@@ -28,6 +28,8 @@ cover: /assets/people/jinsong-chen.jpg
   <span>Associate Professor</span>
 </div>
 
+<!--more-->
+
 <div class="contact-info">
   <img class="icon" src="/assets/icons/department.svg"> 
   <span>Academic Unit of Human Communication, Learning, and Development</span>
@@ -37,8 +39,6 @@ cover: /assets/people/jinsong-chen.jpg
   <img class="icon" src="/assets/icons/school.svg"> 
   <span>BSc (SCUT), MA (GWU), EdD (GWU), Postdoc (Rutgers)</span>
 </div>
-
-<!--more-->
 
 ![Image](/assets/people/jinsong-chen.jpg){:width="30%"}
 

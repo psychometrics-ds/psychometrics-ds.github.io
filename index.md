@@ -5,7 +5,7 @@ mode: immersive
 header:
   theme: dark
 article_header:
-  type: cover
+  type: overlay
   image:
     src: /assets/bg.webp
 ---

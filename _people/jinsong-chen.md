@@ -18,18 +18,26 @@ BSc (SCUT), MA (GWU), EdD (GWU), Postdoc (Rutgers)
 
 ## Contact
 
-<img align="left" class="icon" src="/assets/icons/email.svg"> jinsong[AT]hku.hk
+<div class="contact-info" style="display: flex; align-items: center;">
+  <img class="icon" src="/assets/icons/email.svg"> 
+  <span>jinsong[AT]hku.hk</span>
+</div>
 
-<img align="left" class="icon" src="/assets/icons/phone.svg"> (852) 3917 0389
+<div class="contact-info" style="display: flex; align-items: center;">
+  <img class="icon" src="/assets/icons/phone.svg"> 
+  <span>(852) 3917 0389</span>
+</div>
 
-<img align="left" class="icon" src="/assets/icons/school.svg"> Room 645, Meng Wah Complex
+<div class="contact-info" style="display: flex; align-items: center;">
+  <img class="icon" src="/assets/icons/school.svg"> 
+  <span>Room 645, Meng Wah Complex</span>
+</div>
 
 <style>
   .icon {
     height: 1em;
     margin-right: 10px;
     vertical-align: middle;
-    fill: #b8b8b8;
   }
 </style>
 

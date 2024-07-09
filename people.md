@@ -1,12 +1,13 @@
 ---
-layout: page
-titles: People
+layout: articles
+title: People
+articles:
+  data_source: site.people
+  show_excerpt: true
+  show_cover: true
+  show_readmore: true
+  excerpt_type: html
+  show_info: false
+  group_by: year
+  reverse: false
 ---
-
-<div class="layout--archive js-all">
-  <div class="js-result layout--archive__result d-none">
-    {%- include article-list.html articles=site.people type='brief' show_info=true reverse=true -%}
-  </div>
-</div>
-
-{{ content }}

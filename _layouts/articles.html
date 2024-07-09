@@ -39,8 +39,8 @@ layout: page
 
 {%- if _articles -%}
 
-  {%- assign _order_file_key = _keys[1] | append: '_order' -%}
-  {%- assign _order_file = site[_order_file_key] | default: nil -%}
+  {%- assign _order_file_key = 'people_order' -%}
+  {%- assign _order_file = site.data[_order_file_key] | default: nil -%}
 
   <!-- Debug: Print _order_file_key and _order_file content -->
   {% comment %} DEBUG {% endcomment %}

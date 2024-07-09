@@ -22,7 +22,7 @@ layout: page
         {%- assign _articles = paginator -%}
       {%- else -%}
         {%- assign _articles = site[_key] -%}
-      {%- endcase -%}
+    {%- endcase -%}
   {%- else -%}
     {%- assign _articles = _articles[_key] -%}
   {%- endif -%}
@@ -31,57 +31,65 @@ layout: page
 {%- assign _type = page.articles.type | default: layout.articles.type -%}
 
 {%- if _articles -%}
-  {%- assign _folder = _keys[1] -%}
-  {%- assign _order_file_path = _folder | append: '/order.yml' -%}
-  {%- if site[_folder] and site[_folder].order -%}
-    {%- assign _order_list = site[_folder].order -%}
-    {%- assign _sorted_articles = _order_list | map: 'filename' | map: 'split' | map: last -%}
-    {%- assign _sorted_articles = _sorted_articles | map: 'strip' | map: 'remove' | map: '.md' -%}
-    {%- assign _sorted_articles = _sorted_articles | uniq -%}
-    {%- assign _custom_sorted_articles = site[_folder] | sort: 'title' -%}
-  {%- else -%}
-    {%- assign _sorted_articles = _articles | sort: 'date' | reverse -%}
+
+  {%- assign _order_file = site[_keys[1] | append: '_order'] | default: nil -%}
+  {%- assign _ordered_articles = nil -%}
+
+  {%- if _order_file and _order_file.order -%}
+    {%- assign _ordered_articles = _order_file.order | map: 'strip' -%}
+    {%- assign _articles = _ordered_articles | map: "article -> site[_keys[1] | append: '_' | append: article]" -%}
   {%- endif -%}
 
   <div class="layout--articles">
+
     {%- if _type == 'grid' -%}
       {%- if page.articles.size == 'sm' -%}
-        {%- include article-list.html articles=_sorted_articles type='grid' size='sm' -%}
+        {%- include article-list.html articles=_articles type='grid' size='sm' -%}
       {%- else -%}
-        {%- include article-list.html articles=_sorted_articles type='grid' -%}
+        {%- include article-list.html articles=_articles type='grid' -%}
       {%- endif -%}
+
     {%- elsif _type == 'brief' -%}
       {%- include snippets/assign.html
         target=site.data.variables.default.page.articles.show_info
         source0=layout.articles.show_info source1=page.articles.show_info -%}
       {%- assign _show_info = __return -%}
-      {%- include article-list.html articles=_sorted_articles type='brief' show_info=_show_info -%}
+
+      {%- include article-list.html articles=_articles type='brief' show_info=_show_info -%}
+
     {%- else -%}
       {%- include snippets/assign.html
         target=site.data.variables.default.page.articles.show_cover
         source0=layout.articles.show_cover source1=page.articles.show_cover -%}
       {%- assign _show_cover = __return -%}
+
       {%- include snippets/assign.html
         target=site.data.variables.default.page.articles.show_excerpt
         source0=layout.articles.show_excerpt source1=page.articles.show_excerpt -%}
       {%- assign _show_excerpt = __return -%}
+
       {%- include snippets/assign.html
         target=site.data.variables.default.page.articles.show_readmore
         source0=layout.articles.show_readmore source1=page.articles.show_readmore -%}
       {%- assign _show_readmore = __return -%}
+
       {%- include snippets/assign.html
         target=site.data.variables.default.page.articles.show_info
         source0=layout.articles.show_info source1=page.articles.show_info -%}
       {%- assign _show_info = __return -%}
+
       {%- assign _article_type = page.articles.article_type | default: layout.articles.article_type -%}
       {%- assign _cover_size = page.articles.cover_size | default: layout.articles.cover_size -%}
       {%- assign _excerpt_type = page.articles.excerpt_type | default: layout.articles.excerpt_type -%}
-      {%- include article-list.html articles=_sorted_articles type='item'
+
+      {%- include article-list.html articles=_articles type='item'
         article_type=_article_type
         show_cover=_show_cover cover_size=_cover_size
         show_excerpt=_show_excerpt excerpt_type=_excerpt_type
         show_readmore=_show_readmore show_info=_show_info -%}
+
     {%- endif -%}
+
   </div>
 {%- endif -%}
 

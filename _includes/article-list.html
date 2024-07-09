@@ -4,7 +4,7 @@
 {%- assign _locale_readmore = __return -%}
 
 {%- assign _sorted_list = include.articles | sort: 'date' -%}
-{%- if include.reverse == 'true' -%}
+{%- if include.reverse -%}
   {%- assign _sorted_list = _sorted_list | reverse -%}
 {%- endif -%}
 

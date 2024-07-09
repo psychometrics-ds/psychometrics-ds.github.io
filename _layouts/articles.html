@@ -31,7 +31,7 @@ layout: page
 
 {%- assign _type = page.articles.type | default: layout.articles.type -%}
 {%- assign _group_by = page.articles.group_by | default: layout.articles.group_by -%}
-{%- assign _reverse = page.articles.reverse | default: layout.articles.reverse | default: false -%}
+{%- assign _reverse = page.articles.reverse | default: layout.articles.reverse -%}
 
 {%- if _articles -%}
 

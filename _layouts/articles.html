@@ -39,11 +39,13 @@ layout: page
 
 {%- if _articles -%}
 
-  {%- assign _order_file = site[_keys[1] | append: '_order'] | default: nil -%}
+  {%- assign _order_file_key = _keys[1] | append: '_order' -%}
+  {%- assign _order_file = site[_order_file_key] | default: nil -%}
 
-  <!-- Debug: Print _order_file -->
+  <!-- Debug: Print _order_file and its content -->
   {% comment %} DEBUG {% endcomment %}
-  <p>Order File: {{ _order_file }}</p>
+  <p>Order File Key: {{ _order_file_key }}</p>
+  <p>Order File Content: {{ _order_file }}</p>
   <!-- End Debug -->
 
   {%- assign _ordered_articles = nil -%}

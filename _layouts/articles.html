@@ -58,7 +58,7 @@ layout: page
     {% endfor %}
     <!-- End Debug -->
 
-    {%- assign _articles = _ordered_articles | map: "article -> site[_keys[1] | append: '_' | append: article]" -%}
+    {%- assign _articles = _ordered_articles | map: "article -> site.people | where: 'slug', article" -%}
 
     <!-- Debug: Print final _articles -->
     {% comment %} DEBUG {% endcomment %}

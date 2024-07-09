@@ -183,6 +183,8 @@ collections:
       - jinsong-chen.md
   projects:
     output: true
+    group_by: year
+    reverse: true
 
 ## => Build
 ##############################

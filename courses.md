@@ -6,43 +6,57 @@ aside:
   toc: true
 ---
 
+---
+
 ## 2023
 
-| Term    | Code     | Class | Title                                                        | Instructor    |
-|---------|----------|-------|--------------------------------------------------------------|---------------|
-| 2023 S2 | EDUR6021 | 2A    | Quantitative Research Methods II                             | Chen, Jinsong |
-| 2023 S2 | EDUR7104 | 2A    | Structural Equation Modeling II                              | Chen, Jinsong |
-| 2023 S2 | EDUR7103 | 2A    | Structural Equation Modeling I                               | Chen, Jinsong |
-| 2023 S1 | MLIM6025 | 1A    | Methods of research and enquiry                              | Chen, Jinsong |
-| 2023 S1 | MEDD8904 | 1A    | Introduction to factor analysis and structural equation modeling | Chen, Jinsong |
-| 2023 S1 | EDUR7109 | 1A    | Factor Analysis                                              | Chen, Jinsong |
-| 2023 S1 | EDUR7102 | 1A    | Statistical and Psychometric Analysis with R                 | Chen, Jinsong |
+**2023 S2**
+- **EDUR6021 2A**: Quantitative Research Methods II - *Instructor: Chen, Jinsong*
+- **EDUR7104 2A**: Structural Equation Modeling II - *Instructor: Chen, Jinsong*
+- **EDUR7103 2A**: Structural Equation Modeling I - *Instructor: Chen, Jinsong*
+
+**2023 S1**
+- **MLIM6025 1A**: Methods of Research and Enquiry - *Instructor: Chen, Jinsong*
+- **MEDD8904 1A**: Introduction to Factor Analysis and Structural Equation Modeling - *Instructor: Chen, Jinsong*
+- **EDUR7109 1A**: Factor Analysis - *Instructor: Chen, Jinsong*
+- **EDUR7102 1A**: Statistical and Psychometric Analysis with R - *Instructor: Chen, Jinsong*
+
+---
 
 ## 2022
 
-| Term    | Code     | Class | Title                                                        | Instructor    |
-|---------|----------|-------|--------------------------------------------------------------|---------------|
-| 2022 S2 | MEDD8904 | 2A    | Introduction to factor analysis and structural equation modeling | Chen, Jinsong |
-| 2022 S2 | EDUR7078 | 2A    | Item Response Theory (Part A)                                | Chen, Jinsong |
-| 2022 S2 | EDUR7079 | 2A    | Item Response Theory (Part B)                                | Chen, Jinsong |
-| 2022 S1 | MEDD8815 | 1B    | Introduction to statistical methods                           | Chen, Jinsong |
-| 2022 S1 | MEDD8815 | 1A    | Introduction to statistical methods                           | Chen, Jinsong |
+**2022 S2**
+- **MEDD8904 2A**: Introduction to Factor Analysis and Structural Equation Modeling - *Instructor: Chen, Jinsong*
+- **EDUR7078 2A**: Item Response Theory (Part A) - *Instructor: Chen, Jinsong*
+- **EDUR7079 2A**: Item Response Theory (Part B) - *Instructor: Chen, Jinsong*
+
+**2022 S1**
+- **MEDD8815 1B**: Introduction to Statistical Methods - *Instructor: Chen, Jinsong*
+- **MEDD8815 1A**: Introduction to Statistical Methods - *Instructor: Chen, Jinsong*
+
+---
 
 ## 2021
 
-| Term    | Code     | Class | Title                                                        | Instructor    |
-|---------|----------|-------|--------------------------------------------------------------|---------------|
-| 2021 S2 | MLIM6025 | 2C    | Methods of research and enquiry                              | Chen, Jinsong |
-| 2021 S2 | MLIM6025 | 2B    | Methods of research and enquiry                              | Chen, Jinsong |
-| 2021 S2 | EDUR7104 | 2A    | Structural Equation Modeling II                               | Chen, Jinsong |
-| 2021 S1 | EDUR7109 | 1A    | Factor Analysis                                              | Chen, Jinsong |
-| 2021 S1 | EDUR7103 | 1A    | Structural Equation Modeling I                                | Chen, Jinsong |
+**2021 S2**
+- **MLIM6025 2C**: Methods of Research and Enquiry - *Instructor: Chen, Jinsong*
+- **MLIM6025 2B**: Methods of Research and Enquiry - *Instructor: Chen, Jinsong*
+- **EDUR7104 2A**: Structural Equation Modeling II - *Instructor: Chen, Jinsong*
+
+**2021 S1**
+- **EDUR7109 1A**: Factor Analysis - *Instructor: Chen, Jinsong*
+- **EDUR7103 1A**: Structural Equation Modeling I - *Instructor: Chen, Jinsong*
+
+---
 
 ## 2020
 
-| Term    | Code     | Class | Title                                                        | Instructor    |
-|---------|----------|-------|--------------------------------------------------------------|---------------|
-| 2020 S2 | SHSC2039 | 2A    | Introduction to Clinical Practice II                         | Chen, Jinsong |
-| 2020 S2 | MLIM6025 | 2C    | Methods of research and enquiry                              | Chen, Jinsong |
-| 2020 S1 | MLIM6025 | 1A    | Methods of research and enquiry                              | Chen, Jinsong |
-| 2020 S1 | BSIM4026 | 1A    | Introduction to statistics and quantitative data analysis    | Chen, Jinsong |
+**2020 S2**
+- **SHSC2039 2A**: Introduction to Clinical Practice II - *Instructor: Chen, Jinsong*
+- **MLIM6025 2C**: Methods of Research and Enquiry - *Instructor: Chen, Jinsong*
+
+**2020 S1**
+- **MLIM6025 1A**: Methods of Research and Enquiry - *Instructor: Chen, Jinsong*
+- **BSIM4026 1A**: Introduction to Statistics and Quantitative Data Analysis - *Instructor: Chen, Jinsong*
+
+---

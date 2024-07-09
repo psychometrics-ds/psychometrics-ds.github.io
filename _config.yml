@@ -179,10 +179,6 @@ analytics:
 collections:
   people:
     output: true
-    order:
-      - jinsong-chen.md
-      - 2.md
-      - 1.md
   projects:
     output: true
 

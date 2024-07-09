@@ -39,22 +39,19 @@ layout: page
 
 {%- if _articles -%}
 
-  {%- assign _order_file_path = _keys[1] | append: '/order.yml' -%}
-  {%- capture order_content %}
-    {% include_relative _includes/load_order.yml %}
-  {%- endcapture -%}
-  {%- assign _order_file = order_content | split: '\n' | map: 'strip' | compact -%}
+  {%- assign order_file_path = _keys[1] | append: '/order.yml' -%}
+  {%- include load_order.html path=order_file_path -%}
 
-  <!-- Debug: Print _order_file_path and _order_file content -->
+  <!-- Debug: Print order_file_path and order content -->
   {% comment %} DEBUG {% endcomment %}
-  <p>Order File Path: {{ _order_file_path }}</p>
-  <p>Order File Content: {{ _order_file | jsonify }}</p>
+  <p>Order File Path: {{ order_file_path }}</p>
+  <p>Order Content: {{ order | jsonify }}</p>
   <!-- End Debug -->
 
   {%- assign _ordered_articles = nil -%}
 
-  {%- if _order_file -%}
-    {%- assign _ordered_articles = _order_file %}
+  {%- if order -%}
+    {%- assign _ordered_articles = order %}
 
     <!-- Debug: Print _ordered_articles -->
     {% comment %} DEBUG {% endcomment %}

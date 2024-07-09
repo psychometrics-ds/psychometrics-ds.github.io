@@ -1,0 +1,6 @@
+{% assign order_file_path = include.path %}
+{% capture order_content %}
+  {% include_relative {{ order_file_path }} %}
+{% endcapture %}
+{% assign order_lines = order_content | split: '\n' %}
+{% assign order = order_lines | map: 'strip' | compact %}

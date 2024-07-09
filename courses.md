@@ -6,8 +6,6 @@ aside:
   toc: true
 ---
 
----
-
 ## 2023
 
 **2023 S2**
@@ -58,5 +56,3 @@ aside:
 **2020 S1**
 - **MLIM6025 1A**: Methods of Research and Enquiry - *Instructor: Chen, Jinsong*
 - **BSIM4026 1A**: Introduction to Statistics and Quantitative Data Analysis - *Instructor: Chen, Jinsong*
-
----

@@ -59,8 +59,15 @@ layout: page
     <!-- End Debug -->
 
     <!-- Map ordered articles to actual articles -->
-    {%- assign _articles = _ordered_articles | map: "article -> site.people | where: 'slug', article" -%}
-    {%- assign _articles = _articles | compact -%}
+    {%- assign _sorted_articles = "" | split: "" -%}
+    {%- for filename in _ordered_articles -%}
+      {%- assign matched_article = _articles | where: "path", "/_people/#{filename}.md" | first -%}
+      {%- if matched_article -%}
+        {%- assign _sorted_articles = _sorted_articles | push: matched_article -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- assign _articles = _sorted_articles -%}
 
     <!-- Debug: Print final _articles -->
     {% comment %} DEBUG {% endcomment %}

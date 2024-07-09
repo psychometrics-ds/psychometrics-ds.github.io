@@ -8,6 +8,4 @@ articles:
   show_readmore: true
   excerpt_type: html
   show_info: false
-  group_by: year
-  reverse: false
 ---

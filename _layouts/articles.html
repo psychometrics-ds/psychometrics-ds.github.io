@@ -58,7 +58,9 @@ layout: page
     {% endfor %}
     <!-- End Debug -->
 
+    <!-- Map ordered articles to actual articles -->
     {%- assign _articles = _ordered_articles | map: "article -> site.people | where: 'slug', article" -%}
+    {%- assign _articles = _articles | compact -%}
 
     <!-- Debug: Print final _articles -->
     {% comment %} DEBUG {% endcomment %}

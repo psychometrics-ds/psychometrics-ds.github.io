@@ -40,18 +40,25 @@ layout: page
 {%- if _articles -%}
 
   {%- assign _order_file_path = "_#{_keys[1]}/order.yml" -%}
-  {%- assign _order_file = site.data[_order_file_path] | default: nil -%}
+  {%- assign _order_file = site.static_files | where: "path", _order_file_path | first -%}
+
+  {%- if _order_file %}
+    {%- assign _order_file_content = _order_file.content | split: '\n' -%}
+    {%- assign _order = _order_file_content | map: 'strip' -%}
+  {%- else -%}
+    {%- assign _order = nil -%}
+  {%- endif -%}
 
   <!-- Debug: Print _order_file_path and _order_file content -->
   {% comment %} DEBUG {% endcomment %}
   <p>Order File Path: {{ _order_file_path }}</p>
-  <p>Order File Content: {{ _order_file | jsonify }}</p>
+  <p>Order File Content: {{ _order | jsonify }}</p>
   <!-- End Debug -->
 
   {%- assign _ordered_articles = nil -%}
 
-  {%- if _order_file and _order_file.order -%}
-    {%- assign _ordered_articles = _order_file.order | map: 'strip' -%}
+  {%- if _order -%}
+    {%- assign _ordered_articles = _order %}
 
     <!-- Debug: Print _ordered_articles -->
     {% comment %} DEBUG {% endcomment %}

@@ -39,10 +39,12 @@ layout: page
 
 {%- if _articles -%}
 
-  {%- assign _order_file = site.data.order | default: nil -%}
+  {%- assign _order_file_path = "_#{_keys[1]}/order.yml" -%}
+  {%- assign _order_file = site.data[_order_file_path] | default: nil -%}
 
-  <!-- Debug: Print _order_file content -->
+  <!-- Debug: Print _order_file_path and _order_file content -->
   {% comment %} DEBUG {% endcomment %}
+  <p>Order File Path: {{ _order_file_path }}</p>
   <p>Order File Content: {{ _order_file | jsonify }}</p>
   <!-- End Debug -->
 
@@ -61,7 +63,7 @@ layout: page
     <!-- Map ordered articles to actual articles -->
     {%- assign _sorted_articles = "" | split: "" -%}
     {%- for filename in _ordered_articles -%}
-      {%- assign matched_article = _articles | where: "path", "/_people/#{filename}.md" | first -%}
+      {%- assign matched_article = _articles | where: "path", "/_#{_keys[1]}/#{filename}.md" | first -%}
       {%- if matched_article -%}
         {%- assign _sorted_articles = _sorted_articles | push: matched_article -%}
       {%- endif -%}

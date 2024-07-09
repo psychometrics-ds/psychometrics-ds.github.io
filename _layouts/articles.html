@@ -39,26 +39,22 @@ layout: page
 
 {%- if _articles -%}
 
-  {%- assign _order_file_path = "_#{_keys[1]}/order.yml" -%}
-  {%- assign _order_file = site.static_files | where: "path", _order_file_path | first -%}
-
-  {%- if _order_file %}
-    {%- assign _order_file_content = _order_file.content | split: '\n' -%}
-    {%- assign _order = _order_file_content | map: 'strip' -%}
-  {%- else -%}
-    {%- assign _order = nil -%}
-  {%- endif -%}
+  {%- assign _order_file_path = _keys[1] | append: '/order.yml' -%}
+  {%- capture order_content %}
+    {% include_relative _includes/load_order.yml %}
+  {%- endcapture -%}
+  {%- assign _order_file = order_content | split: '\n' | map: 'strip' | compact -%}
 
   <!-- Debug: Print _order_file_path and _order_file content -->
   {% comment %} DEBUG {% endcomment %}
   <p>Order File Path: {{ _order_file_path }}</p>
-  <p>Order File Content: {{ _order | jsonify }}</p>
+  <p>Order File Content: {{ _order_file | jsonify }}</p>
   <!-- End Debug -->
 
   {%- assign _ordered_articles = nil -%}
 
-  {%- if _order -%}
-    {%- assign _ordered_articles = _order %}
+  {%- if _order_file -%}
+    {%- assign _ordered_articles = _order_file %}
 
     <!-- Debug: Print _ordered_articles -->
     {% comment %} DEBUG {% endcomment %}
@@ -70,7 +66,7 @@ layout: page
     <!-- Map ordered articles to actual articles -->
     {%- assign _sorted_articles = "" | split: "" -%}
     {%- for filename in _ordered_articles -%}
-      {%- assign matched_article = _articles | where: "path", "/_#{_keys[1]}/#{filename}.md" | first -%}
+      {%- assign matched_article = _articles | where: "path", "/#{_keys[1]}/#{filename}.md" | first -%}
       {%- if matched_article -%}
         {%- assign _sorted_articles = _sorted_articles | push: matched_article -%}
       {%- endif -%}

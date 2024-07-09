@@ -180,9 +180,9 @@ collections:
   people:
     output: true
     order:
-      - _people/jinsong-chen.md
-      - _people/2.md
-      - _people/1.md
+      - jinsong-chen.md
+      - 2.md
+      - 1.md
   projects:
     output: true
 

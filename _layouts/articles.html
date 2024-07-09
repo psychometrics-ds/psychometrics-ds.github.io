@@ -22,6 +22,7 @@ layout: page
         {%- assign _articles = paginator -%}
       {%- else -%}
         {%- assign _articles = site[_key] -%}
+      {%- else -%}
     {%- endcase -%}
   {%- else -%}
     {%- assign _articles = _articles[_key] -%}
@@ -30,55 +31,7 @@ layout: page
 
 {%- assign _type = page.articles.type | default: layout.articles.type -%}
 
-<!-- Debug: Print _articles -->
-{% comment %} DEBUG {% endcomment %}
-{% for article in _articles %}
-  <p>{{ article.title }} - {{ article.date }}</p>
-{% endfor %}
-<!-- End Debug -->
-
 {%- if _articles -%}
-
-  {%- assign order_file_path = _keys[1] | append: '/order.yml' -%}
-  {%- include load_order.html path=order_file_path -%}
-
-  <!-- Debug: Print order_file_path and order content -->
-  {% comment %} DEBUG {% endcomment %}
-  <p>Order File Path: {{ order_file_path }}</p>
-  <p>Order Content: {{ order | jsonify }}</p>
-  <!-- End Debug -->
-
-  {%- assign _ordered_articles = nil -%}
-
-  {%- if order -%}
-    {%- assign _ordered_articles = order %}
-
-    <!-- Debug: Print _ordered_articles -->
-    {% comment %} DEBUG {% endcomment %}
-    {% for ordered_article in _ordered_articles %}
-      <p>Ordered Article: {{ ordered_article }}</p>
-    {% endfor %}
-    <!-- End Debug -->
-
-    <!-- Map ordered articles to actual articles -->
-    {%- assign _sorted_articles = "" | split: "" -%}
-    {%- for filename in _ordered_articles -%}
-      {%- assign matched_article = _articles | where: "path", "/#{_keys[1]}/#{filename}.md" | first -%}
-      {%- if matched_article -%}
-        {%- assign _sorted_articles = _sorted_articles | push: matched_article -%}
-      {%- endif -%}
-    {%- endfor -%}
-
-    {%- assign _articles = _sorted_articles -%}
-
-    <!-- Debug: Print final _articles -->
-    {% comment %} DEBUG {% endcomment %}
-    {% for article in _articles %}
-      <p>Final Article: {{ article.title }} - {{ article.date }}</p>
-    {% endfor %}
-    <!-- End Debug -->
-
-  {%- endif -%}
 
   <div class="layout--articles">
 

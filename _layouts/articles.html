@@ -42,10 +42,10 @@ layout: page
   {%- assign _order_file_key = _keys[1] | append: '_order' -%}
   {%- assign _order_file = site[_order_file_key] | default: nil -%}
 
-  <!-- Debug: Print _order_file and its content -->
+  <!-- Debug: Print _order_file_key and _order_file content -->
   {% comment %} DEBUG {% endcomment %}
   <p>Order File Key: {{ _order_file_key }}</p>
-  <p>Order File Content: {{ _order_file }}</p>
+  <pre>Order File Content: {{ _order_file | jsonify }}</pre>
   <!-- End Debug -->
 
   {%- assign _ordered_articles = nil -%}

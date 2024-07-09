@@ -1,5 +1,7 @@
 {%- assign _excerpt_truncate = include.excerpt_truncate | default: 350 -%}
+
 {%- assign _excerpt_type = include.excerpt_type -%}
+
 {%- include snippets/get-locale-string.html key='READMORE' -%}
 {%- assign _locale_readmore = __return -%}
 
@@ -7,7 +9,7 @@
 {%- if include.group_by == 'year' -%}
   {%- assign _sorted_list = _sorted_list | sort: 'date' | reverse -%}
 {%- endif -%}
-{%- if include.reverse and include.group_by != 'year' -%}
+{%- if include.reverse -%}
   {%- assign _sorted_list = _sorted_list | reverse -%}
 {%- endif -%}
 
@@ -24,8 +26,10 @@
 {%- endif -%}
 
   {%- for _article in _sorted_list -%}
+
     {%- include snippets/prepend-baseurl.html path=_article.url -%}
     {%- assign _article_url = __return -%}
+
     {%- if _article.cover -%}
       {%- include snippets/get-nav-url.html path=_article.cover -%}
       {%- assign _article_cover = __return -%}
@@ -75,6 +79,7 @@
         </div>
       </article>
 
+
     {%- elsif include.type == 'brief' -%}
       {%- assign _tags = '' -%}
       {%- for _tag in _article.tags -%}
@@ -119,6 +124,7 @@
             </div>
         </div>
       {%- else -%}
+
         <div class="cell cell--12 cell--md-6 cell--lg-4">
           <div class="card card--flat">
             {%- if _article.cover -%}

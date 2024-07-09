@@ -39,13 +39,11 @@ layout: page
 
 {%- if _articles -%}
 
-  {%- assign _order_file_key = 'people_order' -%}
-  {%- assign _order_file = site.data[_order_file_key] | default: nil -%}
+  {%- assign _order_file = site.data.order | default: nil -%}
 
-  <!-- Debug: Print _order_file_key and _order_file content -->
+  <!-- Debug: Print _order_file content -->
   {% comment %} DEBUG {% endcomment %}
-  <p>Order File Key: {{ _order_file_key }}</p>
-  <pre>Order File Content: {{ _order_file | jsonify }}</pre>
+  <p>Order File Content: {{ _order_file | jsonify }}</p>
   <!-- End Debug -->
 
   {%- assign _ordered_articles = nil -%}

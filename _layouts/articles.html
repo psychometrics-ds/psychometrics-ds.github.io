@@ -32,21 +32,33 @@ layout: page
 
 {%- if _articles -%}
 
-  {%- assign _order_file = site[_keys[1] | append: '_order'] | default: nil -%}
-  {%- assign _ordered_articles = nil -%}
+  {%- capture order_file_path -%}
+    {{ _keys[1] | append: "/order.yml" }}
+  {%- endcapture -%}
 
-  {%- if _order_file and _order_file.order -%}
-    {%- assign _ordered_articles = _order_file.order | map: 'strip' -%}
-    {%- assign _articles = _ordered_articles | map: "article -> site[_keys[1] | append: '_' | append: article]" -%}
+  {%- assign order_file = site.data | where: 'path', order_file_path | first -%}
+
+  {%- if order_file and order_file.order -%}
+    {%- assign ordered_articles = order_file.order | map: 'strip' -%}
+    {%- assign articles_hash = {} -%}
+
+    {%- for article in _articles -%}
+      {%- assign article_filename = article.path | split: '/' | last | split: '.' | first -%}
+      {%- assign articles_hash[article_filename] = article -%}
+    {%- endfor -%}
+
+    {%- assign sorted_articles = ordered_articles | map: "filename -> articles_hash[filename]" -%}
+  {%- else -%}
+    {%- assign sorted_articles = _articles -%}
   {%- endif -%}
 
   <div class="layout--articles">
 
     {%- if _type == 'grid' -%}
       {%- if page.articles.size == 'sm' -%}
-        {%- include article-list.html articles=_articles type='grid' size='sm' -%}
+        {%- include article-list.html articles=sorted_articles type='grid' size='sm' -%}
       {%- else -%}
-        {%- include article-list.html articles=_articles type='grid' -%}
+        {%- include article-list.html articles=sorted_articles type='grid' -%}
       {%- endif -%}
 
     {%- elsif _type == 'brief' -%}
@@ -55,7 +67,7 @@ layout: page
         source0=layout.articles.show_info source1=page.articles.show_info -%}
       {%- assign _show_info = __return -%}
 
-      {%- include article-list.html articles=_articles type='brief' show_info=_show_info -%}
+      {%- include article-list.html articles=sorted_articles type='brief' show_info=_show_info -%}
 
     {%- else -%}
       {%- include snippets/assign.html
@@ -82,7 +94,7 @@ layout: page
       {%- assign _cover_size = page.articles.cover_size | default: layout.articles.cover_size -%}
       {%- assign _excerpt_type = page.articles.excerpt_type | default: layout.articles.excerpt_type -%}
 
-      {%- include article-list.html articles=_articles type='item'
+      {%- include article-list.html articles=sorted_articles type='item'
         article_type=_article_type
         show_cover=_show_cover cover_size=_cover_size
         show_excerpt=_show_excerpt excerpt_type=_excerpt_type

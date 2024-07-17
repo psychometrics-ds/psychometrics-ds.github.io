@@ -12,7 +12,6 @@ article_header:
     src: /assets/bg.webp
 excerpt: "directed by Professor J. Chen"
 ---
-
 <script>
   document.title = "Psychometrics and Data Science Laboratory";
 </script>

@@ -181,8 +181,6 @@ collections:
     output: true
   projects:
     output: true
-    sort_by: 'date'
-    order: 'descending'
 
 
 ## => Build

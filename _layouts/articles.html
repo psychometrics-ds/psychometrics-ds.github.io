@@ -33,7 +33,7 @@ layout: page
 {%- assign _custom_order = page.articles.order -%}
 
 {%- if _custom_order -%}
-  {%- assign _articles = _custom_order | map: 'item' | map: 'site.people' -%}
+  {%- assign _articles = _custom_order | map: "site.people" -%}
 {%- else -%}
   {%- assign _articles = _articles | sort: _sort_by -%}
   {%- if _sort_order == 'reverse' -%}

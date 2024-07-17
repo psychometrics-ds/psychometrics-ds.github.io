@@ -8,6 +8,10 @@ articles:
   show_readmore: true
   excerpt_type: html
   show_info: true
-  group_by: year
-  reverse: true
 ---
+
+{%- assign sorted_projects = site.projects | sort: 'date' | reverse -%}
+
+{% for project in sorted_projects %}
+  {% include article-item.html article=project %}
+{% endfor %}

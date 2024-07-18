@@ -1,5 +1,6 @@
 ---
 title: Professor 2
+slug: professor-2
 tags: People
 cover: /assets/people/jinsong-chen.jpg
 ---

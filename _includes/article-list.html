@@ -2,7 +2,22 @@
 {%- assign _excerpt_type = include.excerpt_type -%}
 {%- include snippets/get-locale-string.html key='READMORE' -%}
 {%- assign _locale_readmore = __return -%}
+
 {%- assign _sorted_list = include.articles | sort: 'date' -%}
+{%- if include.custom_order -%}
+  {%- assign _sorted_list = include.custom_order | map: "strip" | map: "downcase" -%}
+  {%- assign _custom_sorted_list = "" | split: "" -%}
+  {%- for item in _sorted_list -%}
+    {%- for article in include.articles -%}
+      {%- assign article_id = article.url | split: '/' | last | split: '.' | first | downcase -%}
+      {%- if article_id == item -%}
+        {%- assign _custom_sorted_list = _custom_sorted_list | push: article -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+  {%- assign _sorted_list = _custom_sorted_list -%}
+{%- endif -%}
+
 {%- if include.reverse == true -%}
   {%- assign _sorted_list = _sorted_list | reverse -%}
 {%- endif -%}

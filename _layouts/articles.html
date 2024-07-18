@@ -29,6 +29,7 @@ layout: page
 {%- endfor -%}
 
 {%- assign _type = page.articles.type | default: layout.articles.type -%}
+{%- assign _custom_order = page.articles.custom_order -%}
 
 {%- if _articles -%}
 
@@ -36,9 +37,9 @@ layout: page
 
     {%- if _type == 'grid' -%}
       {%- if page.articles.size == 'sm' -%}
-        {%- include article-list.html articles=_articles type='grid' size='sm' reverse=page.articles.reverse -%}
+        {%- include article-list.html articles=_articles type='grid' size='sm' reverse=page.articles.reverse custom_order=_custom_order -%}
       {%- else -%}
-        {%- include article-list.html articles=_articles type='grid' reverse=page.articles.reverse -%}
+        {%- include article-list.html articles=_articles type='grid' reverse=page.articles.reverse custom_order=_custom_order -%}
       {%- endif -%}
 
     {%- elsif _type == 'brief' -%}
@@ -47,7 +48,7 @@ layout: page
         source0=layout.articles.show_info source1=page.articles.show_info -%}
       {%- assign _show_info = __return -%}
 
-      {%- include article-list.html articles=_articles type='brief' show_info=_show_info reverse=page.articles.reverse -%}
+      {%- include article-list.html articles=_articles type='brief' show_info=_show_info reverse=page.articles.reverse custom_order=_custom_order -%}
 
     {%- else -%}
       {%- include snippets/assign.html
@@ -78,7 +79,7 @@ layout: page
         article_type=_article_type
         show_cover=_show_cover cover_size=_cover_size
         show_excerpt=_show_excerpt excerpt_type=_excerpt_type
-        show_readmore=_show_readmore show_info=_show_info reverse=page.articles.reverse -%}
+        show_readmore=_show_readmore show_info=_show_info reverse=page.articles.reverse custom_order=_custom_order -%}
 
     {%- endif -%}
 

@@ -8,7 +8,7 @@ articles:
   show_readmore: true
   excerpt_type: html
   show_info: false
-  custom_order:
+  order:
     - professor-2
     - jinsong-chen
     - professor-1

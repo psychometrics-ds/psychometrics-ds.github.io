@@ -2,7 +2,7 @@
 layout: articles
 title: Projects
 articles:
-  data_source: projects_sorted
+  data_source: site.projects_sorted
   show_excerpt: true
   show_cover: false
   show_readmore: true
@@ -10,4 +10,4 @@ articles:
   show_info: true
 ---
 
-{% assign projects_sorted = site.projects | sort: 'date' | reverse %}
+{% assign site.projects_sorted = site.projects | sort: 'date' | reverse %}

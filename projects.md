@@ -1,22 +1,97 @@
 ---
-layout: page
+layout: articles
 title: Projects
 ---
 
 {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
 
+<!-- Use the sorted projects variable in place of the original data source -->
+{% assign page.articles.data_source = sorted_projects %}
+
+<!-- Original content to maintain style -->
 <div class="layout--articles">
-  <div class="article-list items">
-    {% for project in sorted_projects %}
-      <article class="item">
-        <header>
-          <a href="{{ project.url }}"><h2>{{ project.title }}</h2></a>
-        </header>
-        <div class="item__content">
-          <p>{{ project.date }}</p>
-          <p>{{ project.excerpt }}</p>
-        </div>
-      </article>
-    {% endfor %}
-  </div>
+  {%- assign _page_articles_data_source = page.articles.data_source | default: layout.articles.data_source -%}
+
+  {%- if _page_articles_data_source -%}
+  {%- assign _keys = _page_articles_data_source | split: '.' -%}
+  {%- endif -%}
+
+  {%- assign _articles = nil -%}
+  {%- for _key in _keys -%}
+    {%- if forloop.first -%}
+      {%- case _key -%}
+        {%- when 'site' -%}
+          {%- assign _articles = site -%}
+        {%- when 'page' -%}
+          {%- assign _articles = page -%}
+        {%- when 'layout' -%}
+          {%- assign _articles = layout -%}
+        {%- when 'paginator' -%}
+          {%- assign _articles = paginator -%}
+        {%- else -%}
+          {%- assign _articles = site[_key] -%}
+        {%- endcase -%}
+    {%- else -%}
+      {%- assign _articles = _articles[_key] -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- assign _type = page.articles.type | default: layout.articles.type -%}
+
+  {%- if _articles -%}
+
+    <div class="layout--articles">
+
+      {%- if _type == 'grid' -%}
+        {%- if page.articles.size == 'sm' -%}
+          {%- include article-list.html articles=_articles type='grid' size='sm' -%}
+        {%- else -%}
+          {%- include article-list.html articles=_articles type='grid' -%}
+        {%- endif -%}
+
+      {%- elsif _type == 'brief' -%}
+        {%- include snippets/assign.html
+          target=site.data.variables.default.page.articles.show_info
+          source0=layout.articles.show_info source1=page.articles.show_info -%}
+        {%- assign _show_info = __return -%}
+
+        {%- include article-list.html articles=_articles type='brief' show_info=_show_info -%}
+
+      {%- else -%}
+        {%- include snippets/assign.html
+          target=site.data.variables.default.page.articles.show_cover
+          source0=layout.articles.show_cover source1=page.articles.show_cover -%}
+        {%- assign _show_cover = __return -%}
+
+        {%- include snippets/assign.html
+          target=site.data.variables.default.page.articles.show_excerpt
+          source0=layout.articles.show_excerpt source1=page.articles.show_excerpt -%}
+        {%- assign _show_excerpt = __return -%}
+
+        {%- include snippets/assign.html
+          target=site.data.variables.default.page.articles.show_readmore
+          source0=layout.articles.show_readmore source1=page.articles.show_readmore -%}
+        {%- assign _show_readmore = __return -%}
+
+        {%- include snippets/assign.html
+          target=site.data.variables.default.page.articles.show_info
+          source0=layout.articles.show_info source1=page.articles.show_info -%}
+        {%- assign _show_info = __return -%}
+
+        {%- assign _article_type = page.articles.article_type | default: layout.articles.article_type -%}
+        {%- assign _cover_size = page.articles.cover_size | default: layout.articles.cover_size -%}
+        {%- assign _excerpt_type = page.articles.excerpt_type | default: layout.articles.excerpt_type -%}
+
+        {%- include article-list.html articles=_articles type='item'
+          article_type=_article_type
+          show_cover=_show_cover cover_size=_cover_size
+          show_excerpt=_show_excerpt excerpt_type=_excerpt_type
+          show_readmore=_show_readmore show_info=_show_info -%}
+
+      {%- endif -%}
+
+    </div>
+  {%- endif -%}
+
+  {{ content }}
 </div>

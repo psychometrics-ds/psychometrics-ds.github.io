@@ -1,19 +1,25 @@
 ---
-layout: articles
+layout: page
 title: Projects
-articles:
-  data_source: site.sorted_projects
-  show_excerpt: true
-  show_cover: false
-  show_readmore: true
-  excerpt_type: html
-  show_info: true
 ---
 
 {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
-{% assign site.sorted_projects = sorted_projects %}
 
-<!-- Debugging: Display the sorted projects list -->
-{% for project in sorted_projects %}
-  <p>{{ project.title }} - {{ project.date }}</p>
-{% endfor %}
+<div class="layout--articles">
+  <div class="article-list items items--divided">
+    {% for project in sorted_projects %}
+      <article class="item">
+        <header>
+          <a href="{{ project.url }}"><h2>{{ project.title }}</h2></a>
+        </header>
+        <div class="item__content">
+          <p>{{ project.date }}</p>
+          <div class="article__content">
+            {{ project.excerpt | strip_html | strip | truncate: 350 }}
+          </div>
+          <p><a href="{{ project.url }}">Read more</a></p>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</div>

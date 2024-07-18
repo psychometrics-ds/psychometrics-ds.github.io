@@ -3,6 +3,9 @@ layout: page
 title: Projects
 ---
 
+<!-- Debugging: Display the projects object -->
+{{ site.projects | inspect }}
+
 {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
 
 <div class="layout--articles">

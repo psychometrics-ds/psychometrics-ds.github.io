@@ -11,3 +11,8 @@ articles:
 ---
 
 {% assign site.projects_sorted = site.projects | sort: 'date' | reverse %}
+
+<!-- Debugging: Display the sorted projects list -->
+{% for project in site.projects_sorted %}
+  <p>{{ project.title }} - {{ project.date }}</p>
+{% endfor %}

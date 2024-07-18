@@ -22,7 +22,7 @@ layout: page
       {%- when 'paginator' -%}
         {%- assign _articles = paginator -%}
       {%- else -%}
-        {%- assign _articles = site[_key] -%}
+        {%- assign _articles = page[_key] -%} <!-- Changed to page to access captured variable -->
     {%- endcase -%}
   {%- else -%}
     {%- assign _articles = _articles[_key] -%}

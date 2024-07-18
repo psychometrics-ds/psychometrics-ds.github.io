@@ -1,10 +1,15 @@
 ---
 layout: article
 title: Courses
-key: page-courses
 aside:
   toc: true
 ---
+
+<!-- 
+  aside: Configuration for the aside section of the page.
+  - toc: If true, a table of contents (TOC) will be displayed in the aside section.
+  Set this to false if you do not want a TOC on this page.
+-->
 
 ## 2023
 

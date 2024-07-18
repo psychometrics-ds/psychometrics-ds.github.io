@@ -2,7 +2,7 @@
 layout: articles
 title: Projects
 articles:
-  data_source: site.projects_sorted
+  data_source: site.sorted_projects
   show_excerpt: true
   show_cover: false
   show_readmore: true
@@ -10,9 +10,10 @@ articles:
   show_info: true
 ---
 
-{% assign site.projects_sorted = site.projects | sort: 'date' | reverse %}
+{% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+{% assign site.sorted_projects = sorted_projects %}
 
 <!-- Debugging: Display the sorted projects list -->
-{% for project in site.projects_sorted %}
+{% for project in site.sorted_projects %}
   <p>{{ project.title }} - {{ project.date }}</p>
 {% endfor %}

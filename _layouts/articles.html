@@ -22,18 +22,12 @@ layout: page
         {%- assign _articles = paginator -%}
       {%- else -%}
         {%- assign _articles = site[_key] -%}
-      {%- endcase -%}
+      {%- else -%}
+    {%- endcase -%}
   {%- else -%}
     {%- assign _articles = _articles[_key] -%}
   {%- endif -%}
 {%- endfor -%}
-
-{%- assign _sort_by = page.articles.sort_by | default: 'date' -%}
-{%- assign _sort_order = page.articles.sort_order | default: 'reverse' -%}
-{%- assign _articles = _articles | sort: _sort_by -%}
-{%- if _sort_order == 'reverse' -%}
-  {%- assign _articles = _articles | reverse -%}
-{%- endif -%}
 
 {%- assign _type = page.articles.type | default: layout.articles.type -%}
 

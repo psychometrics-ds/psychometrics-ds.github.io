@@ -2,11 +2,12 @@
 layout: articles
 title: Projects
 articles:
-  data_source: site.projects
+  data_source: site.projects_sorted
   show_excerpt: true
   show_cover: false
   show_readmore: true
   excerpt_type: html
   show_info: true
-
 ---
+
+{% assign site.projects_sorted = site.projects | sort: 'date' | reverse %}

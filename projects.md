@@ -8,6 +8,5 @@ articles:
   show_readmore: true
   excerpt_type: html
   show_info: true
-  sort_by: date
-  sort_order: reverse
+
 ---

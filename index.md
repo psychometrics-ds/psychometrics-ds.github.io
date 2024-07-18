@@ -16,6 +16,6 @@ excerpt: "directed by Professor J. Chen"
   document.title = "Psychometrics and Data Science Laboratory";
 </script>
 
-# Current Project
+## Current Project
 
 [Advancing Generative AI in Personalized Learning](https://psychometrics-ds.github.io/projects/2024-04-01-Advancing-Generative-AI-in-Personalized-Learning.html)
